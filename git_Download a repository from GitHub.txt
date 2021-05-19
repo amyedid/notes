@@ -1,0 +1,9 @@
+Download a repository from GitHub to local repository:
+
+1. Go to the directory where you wish to have the repository (directory)
+
+2. Clone a repository with git clone <url>.  With other VCS systems such as Subversion, the command is "clone" and not "checkout".
+
+$ git clone https://github.com/amyedid/springboot-servicio-productos.git
+
+3. The repository now is created in your local hard disk.

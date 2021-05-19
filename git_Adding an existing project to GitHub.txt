@@ -1,0 +1,57 @@
+Adding an existing project to GitHub using the command line:
+
+1. Create the file README.md and describe in short the project.
+One option is:
+$ echo "# springboot-servicio-items" >> README.md
+
+
+2. CREATE or modified the file .gitignore and put the next lines: 
+#Custom files
+**/.DS_Store
+mvn*
+.mvn/
+
+And delete the line:
+!.mvn/wrapper/maven-wrapper.jar
+
+
+3. Go to the current working directory to your local project. Initialize the local directory as a Git repository.
+$ git init
+
+And review the status of your repository with:
+$ git status
+
+
+4. Add the files in your new local repository. This stages them for the first commit.
+$ git add .
+
+And review the status of your repository with:
+$ git status
+
+
+5. Commit the files that you've staged in your local repository.
+$ git commit -m "add comments about this first commit like why? or what is it?"
+
+# Commits the tracked changes and prepares them to be pushed to a remote repository. 
+# To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+Now, the repository is ready to upload GitHub.
+
+
+6. Create a new repository on GitHub. To avoid errors, DO NOT INITIALIZE the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
+The new repository must be empty to avoid issues.
+
+
+7. At the top of your GitHub repository's Quick Setup page, click  to copy the remote repository URL HTTPS.
+
+
+8. In Terminal, add the URL for the remote repository where your local repository will be pushed:
+# Sets the new remote. Replace your URL.
+$ git remote add origin https://github.com/amyedid/springboot-servicio-items.git
+
+# Verifies the new remote URL
+$ git remote -v
+
+
+9. Finally, push the changes in your local repository to GitHub.
+$ git push -u origin master

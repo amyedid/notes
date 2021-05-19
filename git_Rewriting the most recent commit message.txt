@@ -1,0 +1,14 @@
+Rewriting the most recent commit message
+
+
+1. On the command line, navigate to the repository that contains the commit you want to amend.
+
+2. Type git commit --amend and press Enter, It will open a ext editor like <vi>.
+
+3. Edit the commit message, and save the commit. The new commit and message will appear on GitHub the next time you push.
+
+4. If you have already pushed the commit to GitHub, you will have to force push a commit with an amended message:
+$ git push --force
+
+
+

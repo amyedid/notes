@@ -1,0 +1,12 @@
+ Discard all but save local changes
+
+1. To save what you had done, swap to another branch, commit, push, test, then get back to previous feature branch:
+$ git stash
+
+2. To redoes previously stashed changes and removes them from stashed list:
+$ git stash pop
+
+The stash command also has various additional options like:
+	git stash save, which enables including temporary commit message, which will help you identify changes, among with other options
+	git stash list, which lists all previously stashed commits (yes, there can be more) that were not poped
+	git stash apply, which redoes previously stashed changes, but keeps them on stashed list

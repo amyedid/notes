@@ -1,0 +1,25 @@
+Upload changes from your local repository to GitHub:
+
+1. Show the status of your changes:
+$ git status
+
+2. Show the changes in your local repository:
+$ git diff
+
+3. Add the changes (add it to the Index) to do commit:
+$ git add * 
+or
+$ git add .
+
+#This is the first step in the basic git workflow.
+
+4. To actually commit these changes use:
+$ git commit -m "Se agrega cliente Rest con Feign para consumir productos"
+
+#Now the files are committed to the HEAD, but NOT in your REMOTE repository yet (in GitHub).
+
+5. To send those changes to your remote repository, execute:
+$ git push origin master
+
+6. Finally, refresh your repository in GitHub and view the changes.
+
